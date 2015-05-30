@@ -10,7 +10,7 @@ todos.reopenClass ({
    {
      id: 1,
      title: 'Yes honey',
-     isCompleted: true
+     isCompleted: false
    },
    {
      id: 2,
@@ -20,7 +20,7 @@ todos.reopenClass ({
    {
      id: 3,
      title: 'You know what',
-     isCompleted: false
+     isCompleted: true
    },
    {
      id: 4,
