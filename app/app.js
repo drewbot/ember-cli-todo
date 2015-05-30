@@ -14,4 +14,7 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+// Apply fixture data to the adapter
+App.ApplicationAdapter = DS.FixtureAdapter.extend();
+
 export default App;
