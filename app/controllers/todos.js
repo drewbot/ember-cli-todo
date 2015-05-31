@@ -4,12 +4,15 @@ export default Ember.Controller.extend({
 	 actions: {
     createTodo: function() {
       // Get the todo title set by the "New Todo" text field
+      // newTitle value from template 
       var title = this.get('newTitle');
       if (!title.trim()) { return; }
 
       // Create the new Todo model
       var todo = this.store.createRecord('todo', {
+      	// newTitle is the title of a new todo
         title: title,
+        // whose isCompleted property is false
         isCompleted: false
       });
 
